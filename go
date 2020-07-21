@@ -8,12 +8,6 @@ SCRIPT_DIR=$(cd "$(dirname "$0")" ; pwd -P)
 PROJECT_ROOT="${SCRIPT_DIR}"
 APP=kafka-example
 
-clean() {
-  docker rm -f kafka-example
-}
-
-trap clean EXIT
-
 goal_build() {
   pushd "${SCRIPT_DIR}" > /dev/null
       docker build -t ${APP}  .
