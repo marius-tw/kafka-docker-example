@@ -1,7 +1,7 @@
 # Kafka Example
-This serves as a very basic Kafka environment so you don't have to mess with your local machine.
+This serves as a very basic Kafka environment so you don't have to mess with your local machine. If you're new to Kafka, checkout the [Official Quickstart Tutorial](http://kafka.apache.org/quickstart)
 
-You should be able to run the examples here: quickstart
+You should be able to run the examples here: [quickstart](#quickstart)
 
 ## Quickstart
 Build the container
