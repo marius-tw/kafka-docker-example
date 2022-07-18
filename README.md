@@ -26,7 +26,13 @@ Set up a console producer
 $KAFKA_HOME/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test
 ```
 
-Set up a console consumer. Open a new terminal window and then `docker exec -it kafka-example bash` before running the next command
+Open a new terminal window and run the following command
+```bash
+docker exec -it kafka-example bash
+```
+
+Set up a console consumer. :lightbulb: did you open a new terminal window?
+
 ```bash
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 ```
