@@ -4,7 +4,7 @@ WORKDIR /
 
 RUN apt-get update && apt-get install -y wget vim
 
-RUN wget "https://mirrors.ae-online.de/apache/kafka/2.5.0/kafka_2.12-2.5.0.tgz" && \
+RUN wget "https://archive.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz" && \
  tar -xzvf kafka_2.12-2.5.0.tgz && \
  mv kafka_2.12-2.5.0 /usr/local/bin/kafka && \
  rm -rf kafka_2.12-2.5.0
