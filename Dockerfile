@@ -9,7 +9,7 @@ RUN wget "https://archive.apache.org/dist/kafka/2.5.0/kafka_2.12-2.5.0.tgz" && \
  mv kafka_2.12-2.5.0 /usr/local/bin/kafka && \
  rm -rf kafka_2.12-2.5.0
 
-RUN echo "export KAFKA_HOME=/usr/local/bin/kafka" >> ~/.bash_profile
+RUN echo "export KAFKA_HOME=/usr/local/bin/kafka" >> ~/.bash_profile && echo "export KAFKA_CONFIG=/usr/local/bin/kafka/config" >> ~/.bash_profile
 
 RUN echo "source ~/.bash_profile" >> ~/.bashrc
 
