@@ -10,6 +10,7 @@ Build the container
 Run the container
 `./go run`
 
+
 Start Zookeeper and Kafka
 ```bash
 /app/setup.sh
@@ -25,11 +26,10 @@ Set up a console producer
 $KAFKA_HOME/bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test
 ```
 
-Set up a console consumer
+Set up a console consumer. Open a new terminal window and then `docker exec -it kafka-example bash` before running the next command
 ```bash
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
 ```
-NOTE: You will need to open a new terminal window and then `docker exec -it kafka-example bash` before running the above command
 
 ## Exported Environment Variables
 ```bash
