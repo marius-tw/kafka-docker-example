@@ -41,5 +41,6 @@ $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --to
 
 ## Exported Environment Variables
 ```bash
-KAFKA_HOME=/usr/local/bin/kafka/
+KAFKA_HOME=/usr/local/bin/kafka
+KAFKA_CONFIG=/usr/local/bin/kafka/config
 ```
