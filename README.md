@@ -31,8 +31,9 @@ Open a new terminal session and run the following command.
 docker exec -it kafka-example bash
 ```
 
-Set up a console consumer in the new terminal session you just created
-:bulb: did you open a new terminal session first?
+Set up a console consumer in the new terminal session you just created.
+
+:bulb: Did you open a new terminal session first?
 
 ```bash
 $KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
